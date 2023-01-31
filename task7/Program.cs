@@ -11,9 +11,9 @@ Console.WriteLine($"второе число {num2}");
 int rem = num1 % num2;
 if (rem == 0)
 {
-    Console.WriteLine($"{num1} кратно {num2}");
+    Console.WriteLine($"{num2} кратно {num1}");
 }
 else
 {
-    Console.WriteLine($"{num1} не кратно {num2}, остаток деления {rem}");
+    Console.WriteLine($"{num2} не кратно {num1}, остаток деления {rem}");
 }
