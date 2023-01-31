@@ -10,5 +10,4 @@ while (NegativeN <= N)
 {
     Console.Write(NegativeN + " ");
     NegativeN++;
-}    
-
+}
