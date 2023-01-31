@@ -8,22 +8,30 @@ while (num <= 100)
 {
     if ((num % 3 == 0) & (num % 5 == 0))
     {
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("FizzBuzz");
+        Console.ForegroundColor = ConsoleColor.White;
         num++;
     }
     if (num % 3 == 0)
     {
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.Write(" Fizz ");
+        Console.ForegroundColor = ConsoleColor.White;
         num++;
     }
     if (num % 5 == 0)
     {
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.Write(" Buzz ");
+        Console.ForegroundColor = ConsoleColor.White;
         num++;
     }
     else
     {
+        Console.BackgroundColor = ConsoleColor.White;
         Console.Write($" {num} ");
+        Console.BackgroundColor = ConsoleColor.Black;
         num++;
     }
 }
