@@ -5,8 +5,14 @@
 
 Console.Clear();
 Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-Console.WriteLine($"Сумма чисел = {GetSumNums(num)}");
+int num1 = int.Parse(Console.ReadLine());
+Console.Write("Введите число: ");
+int num2 = int.Parse(Console.ReadLine());
+Console.Write("Введите число: ");
+int num3 = int.Parse(Console.ReadLine());
+Console.WriteLine($"Сумма чисел = {GetSumNums(num1)}");
+Console.WriteLine($"Сумма чисел = {GetSumNums(num2)}");
+Console.WriteLine($"Сумма чисел = {GetSumNums(num3)}");
 
 int GetSumNums(int number)
 {
@@ -14,7 +20,6 @@ int GetSumNums(int number)
     while (number > 0)
     {
         sum += number;
-        Console.Write(sum + " ");
         number--;
     }
     return sum;
