@@ -14,6 +14,7 @@ int GetSumNums(int number)
     while (number > 0)
     {
         sum += number;
+        Console.Write(sum + " ");
         number--;
     }
     return sum;
