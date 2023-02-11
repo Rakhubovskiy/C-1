@@ -10,5 +10,5 @@ Console.Write("Введите координаты Xb: ");
 double Xb = double.Parse(Console.ReadLine()!);
 Console.Write("Введите координаты Yb: ");
 double Yb = double.Parse(Console.ReadLine()!);
-double AB = Math.Sqrt((Xb - Xa) * (Xb - Xa) + (Yb - Ya) * (Yb - Ya));
+double AB = Math.Round(Math.Sqrt((Xb - Xa) * (Xb - Xa) + (Yb - Ya) * (Yb - Ya)), 2);
 Console.WriteLine($"Расстояние между координатами {AB}");
